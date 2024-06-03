@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/**--------------------------->
+<!---Header - Primera  Barra-->
+<!--------------------------->**/
+.container-header1{
+    background-color: #f9f5f0;
+    justify-content: space-between;
+    padding: 10px 10%;
+    font-size: small;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-custom{
+    display: flex;
+    justify-content: space-between;
+
+}
+/**--------------------------->
+<!---Header - Segunda Barra-->
+<!--------------------------->**/
+.container-header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 10%;
+}
+
+.nav-header{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.nav-header:hover{
+    
+    font-weight: 700;
+}
+
+.bar-search{
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #ccc; 
+    padding: 5px;
+    border-radius: 15px; 
+    font-size: 14px; 
+    width: 300px; 
+}
+
+.icon-search{
+    font-family:'Material Symbols Outlined';
+    font-size: 25px; 
+    color: #555; 
+    position:relative;
+    left: -35px; 
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.logo-coolbox{
+    height: 100px;
+}    
+/***************
+********
+********/
+
+.container-header2 {
+    position: relative;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-container a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+#cart-icon {
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: 4px; /* Ajusta la posición vertical */
+    right: -12px; /* Ajusta la posición horizontal */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px; /* Reduce el tamaño del padding */
+    font-size: 10px; /* Reduce el tamaño de la fuente */
+    font-weight: bold;
+    z-index: 1; /* Asegura que esté sobre el icono */
+}
+
+
+
+
+/**--------------------------->
+<!---Section - Presentacion--->
+<!--------------------------->**/
+.banner{
+    padding: 1px;
+    height: 40rem;
+    background-image: url('../img/background-coolbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-custom{
+    text-align: center;
+    font-family: 'Metropolis', sans-serif;
+}
+
+.banner-custom h1{
+    margin-bottom: 30px;
+    font-size: 12rem;
+}
+
+.banner-custom h2{
+    margin-bottom: 30px;
+    font-weight:500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-custom a{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+/**<!--------------------------->
+<!--------Main - Productos------>
+<!------------------------------>**/
+
+.productos-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-productos h3{
+    margin-top: 30px;
+    font-size:85%;
+    font-weight: 600;
+}
+
+.container-productos h2{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.productos-promociones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 3rem;
+    
+}
+
+.card-product{
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(0,0, 0, 0.1);
+}
+.img-destacados{
+    height: 200px;
+    width: 110%;
+}
+
+.cotainer-img-destacados{
+    position: relative;
+}
+
+.content-product h5{
+    font-family: 'Metropolis', sans-serif;
+    color: #454546;                                 
+}
+
+.content-product h3{
+    color: black;
+}
+
+.content-product h4{
+    font-family: 'Metropolis', sans-serif;
+    color: red;    
+}
+
+
+.Agregar_carrito {
+    background-color: red; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.Agregar_carrito:hover {
+    background-color: rgb(219, 0, 7); 
+}
+
+.Agregar_carrito:active {
+    background-color: black; 
+}
+
+.Agregar_carrito:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(216, 10, 10, 0.5);
+}
+
+
+/**<!--------------------------->
+<!------Main - Ubicacion----->
+<!--------------------------->**/
+
+.ubicacion-container {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ubicacion-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background-coolbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; 
+    transform: scaleX(-1) rotate(180deg); /
+}
+
+.ubicacion-info {
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1; 
+}
+
+.ubicacion-container h2{
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: white;
+}
+
+.ubicacion-container p{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 90%;
+    color: white;
+}
+
+.resaltado{
+    font-weight: bold;
+    font-size: 130% ;
+    color:rgb(255, 0, 0);
+}
+
+.decor{
+    display: inline-block;
+    width: 400px; 
+    border-bottom: 1px solid white; 
+    vertical-align: middle; 
+    font-size: 0; 
+}
+
+.ubicacion-container h4{
+    font-family: 'Metropolis', sans-serif;
+    color: white;
+    font-weight: 500;
+
+}
+
+.container-ubicacion{
+    padding: 7.5rem;
+}
+
+/**<!--------------------------->
+<!------Main - Nosotros------>
+<!--------------------------->**/
+
+.Coolbox-info-conteiner{
+    padding: 2rem 19%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-coolbox{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 100px;
+}
+.info-coolbox h2{
+    font-size: 3rem;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.info-coolbox h3{
+    font-size: 110%;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.info-coolbox i,.coolbox-yt i {
+    font-size: 30px;
+    color: red;
+    margin-right: 10px;
+}
+
+/**<!--------------------------->
+<!------Main - Servicios----->
+<!--------------------------->**/
+
+.container-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 5rem 10%; 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicios-container {
+    background-color: red; 
+}
+
+.container-servicios div {
+    text-align: center; 
+    padding: 15px; 
+    background-color: rgb(219, 0, 7);
+    border-radius: 15px; 
+    margin: 1px; 
+}
+
+.container-servicios i {
+    font-size: 30px; 
+}
+
+.container-servicios h2{
+    font-size: 130%;
+}
+
+.container-servicios h3{
+    font-size: 100%;
+    font-weight: 300;
+}
+
+/**<!--------------------------->
+<!-----------Footer---------->
+<!--------------------------->**/
+
+.container-footer{
+    background-color: black;
+    padding: 1px 10%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Metropolis', sans-serif;
+    color: white;
+    
+}
+
+.container-info-footer h2{
+    font-size: 19px;
+}
+.container-info-footer h3{
+    font-size: 13px;
+    font-weight:400 ;
+}
+
+
+.container-social a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-social h2{
+    font-size: 16px;
+}
+
+.container-social h3{
+    font-size: 13px;
+    font-weight:400 ;
+}
+
+.fa-circle{
+    font-size: 6px;
+    
+}
+
+.fa-facebook{
+    font-size: 16px;
+}
+
+.fa-Youtube{
+    font-size: 16px;
+}
+
+/** Producto.html**/
+
+
+.Venta-Productos {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10rem;
+    margin-bottom: 50px;
+    font-size: 2rem;
+
+}
+
+.Container-categoria {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 8rem; 
+}
+
+.card-categoria {
+    flex: 0 1 auto; 
+}
+
+.Venta-Productos img {
+    height: 300px;
+    width: auto; 
+}
+
+
+
+/** 
+    computadoras.html
+**/
+
+.computadoras-venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-computadoras {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    justify-content: center; 
+}
+
+.card-computadoras {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem); 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.computadora-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.computadora-info {
+    margin-top: 1rem;
+}
+
+.computadora-info h5 {
+    font-family: 'Metropolis', sans-serif;
+    color: #454546; 
+}
+
+.computadora-info h3 {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.computadora-info h4 {
+    font-family: 'Metropolis', sans-serif;
+    color: red;    
+    margin: 0.5rem 0;
+}
+
+/** 
+    celulares.html
+**/
+
+.Celular-venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-Celulares {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-celular {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2rem); 
+    max-width: calc(33.333% - 2rem); 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.celular-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.celular-info {
+    margin-top: 1rem;
+}
+
+.celular-info h5 {
+    font-family: 'Metropolis', sans-serif;
+    color: #454546; 
+}
+
+.celular-info h3 {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.celular-info h4 {
+    font-family: 'Metropolis', sans-serif;
+    color: red;    
+    margin: 0.5rem 0;
+}
+
+/** 
+    Audifonos.html
+**/
+
+.audifonos-venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-audifonos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 1rem;
+}
+
+.card-audifonos {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2rem); 
+    max-width: calc(33.333% - 2rem); 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.audifonos-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.audifonos-info {
+    margin-top: 1rem;
+}
+
+.audifonos-info h5 {
+    font-family: 'Metropolis', sans-serif;
+    color: #454546; 
+}
+
+.audifonos-info h3 {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.audifonos-info h4 {
+    font-family: 'Metropolis', sans-serif;
+    color: red;    
+    margin: 0.5rem 0;
+}
+
+/** 
+    Tarjetas Graficas.html
+**/
+
+.tarjetasgraficas-venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-tarjetasgraficas {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    justify-content: center; 
+    padding: 1rem;
+}
+
+.card-tarjetasgraficas {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2rem); 
+    max-width: calc(33.333% - 2rem); 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.tarjetasgraficas-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.tarjetasgraficas-info {
+    margin-top: 1rem;
+}
+
+.tarjetasgraficas-info h5 {
+    font-family: 'Metropolis', sans-serif;
+    color: #454546; 
+}
+
+.tarjetasgraficas-info h3 {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.tarjetasgraficas-info h4 {
+    font-family: 'Metropolis', sans-serif;
+    color: red;    
+    margin: 0.5rem 0;
+}
+
+/** 
+    nosotros.html
+**/
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    background-color: white;
+    font-family: 'Metropolis', sans-serif;
+    text-align: center;
+}
+
+.container-nosotros h2 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.container-mision-vision {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    gap: 2rem;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 45%;
+}
+
+.card h2 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    line-height: 1.6;
+}
+/** 
+    contacto.html
+**/
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-contacto p {
+    margin-bottom: 2rem;
+}
+
+.container-formulario {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],input[type="email"],input[type="tel"],select,textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+/** div galeria **/
+
+.img-slide {
+    display: none;
+    width: 100%; 
+}
+
+.img-slide:first-child {
+    display: block;
+}
+
+.gallery {
+    position: relative;
+    max-width: 600px; 
+    margin: auto;
+}
+
+/** Carrito.html**/
+.cesta-productos{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cesta-productos, .checkout {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.cesta-productos {
+    margin-right: 10px;
+}
+
+.checkout {
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkout h2 {
+    margin-bottom: 20px;
+}
+
+.checkout p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.checkout button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout button:hover {
+    background-color: darkred;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item button.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button.remove-item:hover {
+    background-color: darkred;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cesta-productos, .checkout {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.cesta-productos {
+    margin-right: 10px;
+}
+
+.checkout {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.checkout h2 {
+    margin-bottom: 20px;
+}
+
+.payment-icons {
+    margin: 10px 0;
+}
+
+.payment-icons i {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.payment-icons i:hover {
+    color: #000;
+}
+
+.checkout p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.checkout button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout button:hover {
+    background-color: darkred;
+}
